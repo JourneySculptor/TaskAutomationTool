@@ -21,12 +21,12 @@ def backup_files():
         for filename in os.listdir(source_folder):
             source_path = os.path.join(source_folder, filename)
             destination_path = os.path.join(backup_folder, filename)
-            shutil.copy2(source_path, destination_path)  # Copy the file 
+            shutil.copy2(source_path, destination_path)  # Copy file with metadata
             print(f"Backed up {filename} to {backup_folder}")
     except Exception as e:
         print(f"Error during backup: {e}")
 
-# Function to send email
+# Function to send an email notification
 def send_email():
     sender_email = 'your_email@example.com'
     receiver_email = 'receiver_email@example.com'
@@ -48,11 +48,11 @@ def send_email():
     except Exception as e:
         print(f"Error sending email: {e}")
 
-# Schedule: perform backup and email notification at set times
+# Schedule the backup and email notification to run daily
 schedule.every().day.at("10:00").do(backup_files)
 schedule.every().day.at("10:05").do(send_email)
 
-# Loop to run the schedule
+# Run the scheduled tasks in a loop
 while True:
     schedule.run_pending()
     time.sleep(60)
