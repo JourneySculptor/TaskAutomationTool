@@ -42,3 +42,6 @@ This repository contains a Python script that automates file backup and sends em
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+JourneySculptor 
