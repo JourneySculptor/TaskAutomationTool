@@ -2,6 +2,16 @@
 
 This repository contains a Python script that automates file backup and sends email notifications. It is designed for regular file backups and daily email reminders to ensure data security.
 
+## Learning in Progress
+This project is part of my learning journey in Python automation and script-based task management. I'm currently focused on improving my understanding of file operations, email handling, and task scheduling in Python. Over time, I plan to make this tool more reliable and secure as I expand my knowledge.
+
+### Planned Improvements
+- **Improved Error Handling**: Add error handling for email configuration issues and failed backup attempts.
+- **Enhanced Security**: Explore ways to secure email credentials, such as using environment variables and secret management.
+- **Flexible Scheduling**: Implement more flexible scheduling options to run tasks at custom intervals.
+
+Your feedback and suggestions are welcome as I work to enhance this project!
+
 ## Features
 - **Automated Backup**: Copies files from a source folder to a backup location.
 - **Email Notifications**: Sends an email notification after each backup.
